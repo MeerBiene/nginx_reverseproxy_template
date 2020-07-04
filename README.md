@@ -7,3 +7,5 @@ This is a very basic nginx vhost template, mainly used by myself. If you want to
  Features:
  - http2
  - cipher suites picked for maximum paranoia
+ - disabled TLSv1/1.1 (enabled by default on most configurations)
+ - Authentification stuff if needed (Basic http authentification and client certificates)
