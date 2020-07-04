@@ -17,11 +17,14 @@ This is an easy to use nginx reverse proxy vhost template, mainly used by myself
 
  This walks you though the steps of gaining a free Lets Encrypt Certificate and proxying your domain to your application.
 
+ Before you start: Clone or download this repository to your desired machine and run the command inside it.
+
  - Step 1: Install Certbot.
  - Step 2: Run Certbot with the following command: `certbot -d yourdomain.com certonly`. Remember to replace yourdomain.com with your domain.
  - Step 3: If you have python installed run the command `python setup.py` and enter your domain when asked. This will generate your config file automatically for you.
- - Step 3.1: If you want to do the changes manually, simply open the example.com.conf file and replace example.com with your domain and according certificate paths.
+ - Step 3.1: If you want to do the changes manually, simply open the example.com.conf file and replace example.com with your domain and according certificate paths. Remembed to rename the file to your domainname.
 
 > Some additional Notes: 
 > - When using certbot, make sure nginx is not running and choose the option to spin up a temporary web server. 
+> - To enable your config, place the yourdomain.conf file in `/etc/nginx/sites_available` and run the command `nginx -t`. If it shows OK, move on and run `ln -s /etc/nginx/sites-enabled/yourdomain.com.conf /etc/nginx/ites-available/
 > - Test your config by running `nginx -t` before reloading or restarting nginx
