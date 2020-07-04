@@ -7,7 +7,8 @@ This is an easy to use nginx reverse proxy vhost template, mainly used by myself
  For advanced authentification you will need to make yourself familiar with creating a Root Certificate Authority and issuing Client Certificates.
  
  Features:
- - http2
- - cipher suites picked for maximum paranoia
- - disabled TLSv1/1.1 (enabled by default on most configurations)
+ - *http2*
+ - Cipher suites picked for maximum paranoia
+ - Disabled TLSv1/1.1 (enabled by default on most configurations)
+ - Option to enable encryption between nginx and your application
  - Authentification stuff if needed (Basic http authentification and client certificates)
