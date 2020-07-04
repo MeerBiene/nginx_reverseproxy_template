@@ -7,11 +7,11 @@ This is an easy to use nginx reverse proxy vhost template, mainly used by myself
  For advanced authentification you will need to make yourself familiar with creating a Root Certificate Authority and issuing Client Certificates.
  
  Features:
- - *http2*
- - Cipher suites picked for maximum paranoia
- - Disabled TLSv1/1.1 (enabled by default on most configurations)
- - Option to enable encryption between nginx and your application
+ - *http2 ready*
+ - Cipher suites picked for maximum *paranoia*
+ - Disabled TLSv1/1.1 (enabled by default in most configurations)
  - Authentification stuff if needed (Basic http authentification and client certificates)
+  - Option to enable traffic encryption between the nginx reverse proxy and your application
 
  ![Security](https://i.imgur.com/G52NR0r.png)
 
@@ -33,9 +33,9 @@ This is an easy to use nginx reverse proxy vhost template, mainly used by myself
 
 ## Setup (BEGINNER):
 
-This will walk you through all steps required.
+This will walk you through all steps required to reverseproxy your domain to your backend application.
 
-Before you start: Before you start: Clone or download this repository to your desired machine.
+Before you start: Clone or download this repository to your desired machine.
 
 - Step 1: Go to the homepage of your Domainprovider and make a new DNS Record. If you are using Namecheap, its under the option "Advanced DNS" ![Namecheap Exmaple](https://i.imgur.com/FqWMZeG.png). In there, 
 
