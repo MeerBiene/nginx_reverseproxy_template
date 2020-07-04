@@ -26,5 +26,5 @@ This is an easy to use nginx reverse proxy vhost template, mainly used by myself
 
 > Some additional Notes: 
 > - When using certbot, make sure nginx is not running and choose the option to spin up a temporary web server. 
-> - To enable your config, place the yourdomain.conf file in `/etc/nginx/sites_available` and run the command `nginx -t`. If it shows OK, move on and run `ln -s /etc/nginx/sites-enabled/yourdomain.com.conf /etc/nginx/ites-available/
+> - To enable your config, place the yourdomain.conf file in `/etc/nginx/sites_available` and run the command `nginx -t`. If it shows OK, move on and run `ln -s /etc/nginx/sites-enabled/yourdomain.com.conf /etc/nginx/ites-available/`
 > - Test your config by running `nginx -t` before reloading or restarting nginx
