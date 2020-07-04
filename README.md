@@ -13,6 +13,8 @@ This is an easy to use nginx reverse proxy vhost template, mainly used by myself
  - Option to enable encryption between nginx and your application
  - Authentification stuff if needed (Basic http authentification and client certificates)
 
+ ![Security](https://i.imgur.com/G52NR0r.png)
+
  ## Setup:
 
  This walks you though the steps of gaining a free Lets Encrypt Certificate and proxying your domain to your application.
@@ -21,7 +23,7 @@ This is an easy to use nginx reverse proxy vhost template, mainly used by myself
 
  - Step 1: Install Certbot.
  - Step 2: Run Certbot with the following command: `certbot -d yourdomain.com certonly`. Remember to replace yourdomain.com with your domain.
- - Step 3: If you have python installed run the command `python setup.py` and enter your domain when asked. This will generate your config file automatically for you.
+ - Step 3: If you have python installed run the command `python setup.py` and enter your domain when asked. This will generate your config file automatically for you. If you encounter any errors, make sure you have python3 installed and run the script with python3!
  - Step 3.1: If you want to do the changes manually, simply open the example.com.conf file and replace example.com with your domain and according certificate paths. Remembed to rename the file to your domainname.
 
 > Some additional Notes: 
