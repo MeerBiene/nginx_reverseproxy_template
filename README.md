@@ -49,9 +49,9 @@ Before you start: Clone or download this repository to your desired machine.
 
 - **Step 5:** Download or clone this repository if you havn't already.
 
-- **Step 6:** If you have python installed, run `python3 setup.py` inside the repostories folder. Enter your domain and answer all other questions. When the script is done, you will find a newly generated file with the name of your domain. Place this inside of `/etc/nginx/sites-available` and run the command `nginx -t`. If it shows OK, move on to step 7. If there are any syntax errors, go ahead and try to fix them. If you dont fix them and restart NGINX, it will break. If everything went correctly your output should look like this: ![nginx configtest ok](https://i.imgur.com/gP8HwXa.png)
+- **Step 6:** If you have python installed, run `python3 setup.py` inside the repositories folder. Enter your domain and answer all other questions. When the script is done, you will find a newly generated file with the name of your domain. Place this inside of `/etc/nginx/sites-available` and run the command `nginx -t`. If it shows OK, move on to step 7. If there are any syntax errors, go ahead and try to fix them. If you dont fix them and restart NGINX, it will break. If everything went correctly your output should look like this: ![nginx configtest ok](https://i.imgur.com/gP8HwXa.png)
 
-- **Step 7:** Create a symlink. Do sy by running the command `ln -s /etc/nginx/sites-availabe/yourdomain.com.conf /etc/nginx/sites-enabled/`. Check your nginx config again with `nginx -t`and if it shows "OK", move on to step 8.
+- **Step 7:** Create a symlink. Do so by running the command `ln -s /etc/nginx/sites-availabe/yourdomain.com.conf /etc/nginx/sites-enabled/`. Check your nginx config again with `nginx -t`and if it shows "OK", move on to step 8.
 
 - **Step 8:** Restart Nginx. Do so by running the command `systemctl restart nginx`. Check that it started correctly by running `systemctl status nginx`. Your output should look like this if no errors were encountered: ![nginx running](https://i.imgur.com/jrdPgfD.png)
 
