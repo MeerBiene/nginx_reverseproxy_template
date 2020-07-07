@@ -35,6 +35,8 @@ This is an easy to use nginx reverse proxy vhost template, mainly used by myself
 
 This will walk you through all steps required to reverseproxy your domain to your backend application.
 
+> Note: All of the following steps/commands were made and recorded on a Debian 10 VM. If you use a non debian based system for your server, make sure to adjust your commands accordingly, before copypasting them and wondering why it errors.
+
 Before you start: Clone or download this repository to your desired machine.
 
 - **Step 1:** Go to the homepage of your Domainprovider and make a new DNS Record. If you are using Namecheap, its under the option "Advanced DNS". ![Namecheap Exmaple](https://i.imgur.com/FqWMZeG.png)In there, register a new DNS Record like so: ![dns rec namecheap](https://i.imgur.com/TKPjCbX.png) The Host Field is the subdomain where your application will live, so if i wanted to use `app.example.com` I would have to put `app` in the host field. Enter your IP Adress in the designated input field and you're good to go.
