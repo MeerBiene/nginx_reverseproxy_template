@@ -59,7 +59,11 @@ Before you start: Clone or download this repository to your desired machine.
 - **Step 6:** *(Needs python installed)* If you have python installed, run `python3 setup.py` inside the repositories folder. Enter your domain and answer all other questions. When the script is done, you will find a newly generated file with the name of your domain. Place this inside of `/etc/nginx/sites-available` and run the command `nginx -t`. If it shows OK, move on to step 7. If there are any syntax errors, go ahead and try to fix them. If you dont fix them and restart NGINX, it will break. If everything went correctly your output should look like this: ![nginx configtest ok](https://i.imgur.com/gP8HwXa.png)
 
 
-- **Step 6.1** If you don't have Python installed, you have to manually go over the config file and change your desired values. I would recommend to just copy the exmaple.conf file and name the new file yourdomain.com.conf (e.g.: `app.example.com.conf` for app.example.com THe command for this example would be: `cp example.com.conf /etc/nginx/sites-available/app.example.com`. Adjust it before running this command and remember to put in your domain.  
+- **Step 6.1** If you don't have Python installed, you have to manually go over the config file and change your desired values. I would recommend to just copy the exmaple.conf file and name the new file yourdomain.com.conf (e.g.: `app.example.com.conf` for app.example.com THe command for this example would be: `cp example.com.conf /etc/nginx/sites-available/app.example.com.conf`. Adjust it before running this command and remember to put in your domain. 
+> Its not directly neccessary to name your configuration files after your domain, but I like to handle it that way, for easier overview.
+<br>
+
+> Note: Remember to put `.conf` at the end of you domain configuration file, so `subdomain.domain.com.conf` or `app.example.com.conf` or `meer.is-in-outer.space.conf` (yes the last one is a real example, if you want a subdomain with `is-in-outer.space` for an imageserver or so, slide me a DM on discord (MeerBiene#7060)) 
 
 - **Step 7:** Create a symlink. Do so by running the command `ln -s /etc/nginx/sites-availabe/yourdomain.com.conf /etc/nginx/sites-enabled/`. Check your nginx config again with `nginx -t`and if it shows "OK", move on to step 8.
 
