@@ -15,6 +15,11 @@ This is an easy to use nginx reverse proxy vhost template, mainly used by myself
 
  ![Security](https://i.imgur.com/G52NR0r.png)
 
+ ## Disclaimer:
+ > I made this template with the best of my knowledge. Please do not think that this template is complete. I will keep working on it and try to update its as soon as Issues arise or I learn something new that I consider important for this template to work. <br><br> 
+ If you encounter any bugs or something goes wrong, dont hesitate to open an Issue here on Github. 
+
+
  ## Setup (ADVANCED):
 
  This walks you though the steps of gaining a free Lets Encrypt Certificate and proxying your domain to your application.
@@ -24,7 +29,7 @@ This is an easy to use nginx reverse proxy vhost template, mainly used by myself
  - **Step 1:** Install Certbot.
  - **Step 2:** Run Certbot with the following command: `certbot -d yourdomain.com certonly`. Remember to replace yourdomain.com with your domain.
  - **Step 3:** If you have python installed run the command `python setup.py` and enter your domain when asked. This will generate your config file automatically for you. If you encounter any errors, make sure you have python3 installed and run the script with python3!
- - Step 3.1: If you want to do the changes manually, simply open the example.com.conf file and replace example.com with your domain and according certificate paths. Remembed to rename the file to your domainname.
+ - **Step 3.1:** If you want to do the changes manually, simply open the example.com.conf file and replace example.com with your domain and according certificate paths. Remembed to rename the file to your domainname.
 
 > Some additional Notes: 
 > - When using certbot, make sure nginx is not running and choose the option to spin up a temporary web server. 
@@ -61,3 +66,7 @@ Before you start: Clone or download this repository to your desired machine.
 - **Step 8:** Restart Nginx. Do so by running the command `systemctl restart nginx`. Check that it started correctly by running `systemctl status nginx`. Your output should look like this if no errors were encountered: ![nginx running](https://i.imgur.com/jrdPgfD.png)
 
 - **Step 9:** Start your application on the port that you specified in the setup process. Then visit your domain in the browser to ensure everything worked properly.
+
+## Contributing:
+
+If you find an Issue that you know how to resolve, simply submit a pull request, its greatly appreciated.
