@@ -20,6 +20,10 @@ This is an easy to use nginx reverse proxy vhost template, mainly used by myself
  If you encounter any bugs or something goes wrong, dont hesitate to open an Issue here on Github. 
 
 
+ ## Setup (PRO):
+
+ You probably now what to do.
+
  ## Setup (ADVANCED):
 
  This walks you though the steps of gaining a free Lets Encrypt Certificate and proxying your domain to your application.
@@ -70,6 +74,12 @@ Before you start: Clone or download this repository to your desired machine.
 - **Step 8:** Restart Nginx. Do so by running the command `systemctl restart nginx`. Check that it started correctly by running `systemctl status nginx`. Your output should look like this if no errors were encountered: ![nginx running](https://i.imgur.com/jrdPgfD.png)
 
 - **Step 9:** Start your application on the port that you specified in the setup process. Then visit your domain in the browser to ensure everything worked properly.
+
+## Authentification guide:
+
+### Basic HTTP Auth
+
+### Client Certificates
 
 ## Contributing:
 
