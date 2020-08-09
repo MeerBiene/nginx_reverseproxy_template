@@ -22,7 +22,7 @@ This is an easy to use nginx reverse proxy vhost template, mainly used by myself
 
  ## Setup (PRO):
 
- You probably now what to do.
+ You probably know what to do.
 
  ## Setup (ADVANCED):
 
